@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Piedra papel tijera lagarto spock</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
@@ -14,9 +15,20 @@
         <div class="containerHeader">
             <img class="chooseOne" src="img/chooseone.jpg" alt="Choose One!">
         </div>
+
     </header>
     <main>
+        <div class="board">
+            <div class="score_Board">
+                <div id="userlabel" class="badge">user</div>
+                <div id="computerlabel" class="badge">compu</div>
+                <div class="losspan" id="losspan">
+                    <span id="user_Score">0</span>:<span id="computer_Score">0</span>
+                </div>
+            </div>
+        </div>
         <div class="container" id="container">
+
             <div class="row " id="row_choose">
                 <img class="choose" id="piedra" src="img/rock.png" alt="Imagen de piedra">
                 <img class="choose" id="papel" src="img/paper.png" alt="Imagen de papel">
@@ -26,14 +38,17 @@
             </div>
 
             <div class="rowResultado" id="rowREsultado">
-                
+
                 <p class="resultado" id="resultado">
-                 </p>
+                </p>
             </div>
+
         </div>
+
     </main>
     <footer>
         <button class="boton" id="botton">Reset score</button>
+
     </footer>
 
     <script src="main.js"></script>

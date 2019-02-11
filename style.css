@@ -5,7 +5,7 @@ body {
 
 header {
     width: 100%;
-    height: 100%;
+    height: 20vh;
     background: black;
     border-bottom: 5px solid goldenrod;
     margin: 0;
@@ -14,12 +14,48 @@ header {
 }
 
 header img {
-    width: 15vw;
+    height: 15vh;
+
 }
+
+.score_Board {
+    width: 10vw;
+    height: 7vh;
+    margin-top: -10%;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    background: linear-gradient(rgba(139, 0, 0, 1) 10%, black 100%);
+    position: relative;
+    padding: 2px 10px;
+}
+
+.badge {
+    padding: 2px 10px;
+}
+
+#userlabel {
+    position: absolute;
+    left: -2%;
+}
+
+#computerlabel {
+    position: absolute;
+    right: -2%;
+}
+
+.losspan{
+    padding-top: 25px;
+    padding-left: 30%;
+}
+
+
 
 main {
     width: 100%;
-    height: 55vh;
+    height: 57vh;
     background-image: url(img/background.jpg);
     background-position: center;
     background-size: cover;
@@ -27,23 +63,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+
 }
 
-.hidden {
-    display: none;
-}
+
 
 .choose {
-    width: 12vw;
-    margin: 10px;
+    width: 10vw;
+    margin: 12px;
+
 }
 
 .rowResultado {
-    
-    height: 10vh;
+    height: 5vh;
     text-align: center;
-    
 }
 
 
@@ -51,16 +84,17 @@ main {
 
 footer {
     width: 100%;
-    height: 10vw;
+    height: 20vh;
     background: black;
     border-top: 5px solid goldenrod;
     margin: 0;
     display: flex;
     justify-content: center;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
+
+
+
 
 button {
     width: 150px;
@@ -70,4 +104,5 @@ button {
     background: linear-gradient(rgba(139, 0, 0, 0.74) 20%, black 100%);
     color: whitesmoke;
     font-size: 15px;
+
 }
